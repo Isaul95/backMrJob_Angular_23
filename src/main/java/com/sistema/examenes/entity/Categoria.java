@@ -6,6 +6,11 @@ import javax.persistence.*;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+/** --------------------------------------------------
+ * --------    ESTE NO SE USA PARA MR JOB -------------
+ * ------------------------------------------------ */
+
+
 @Entity
 @Table(name = "categorias")
 public class Categoria {

@@ -8,16 +8,14 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class UsuarioRol {
+@Table(name = "cat_dias_servicio")
+public class CatDiasServicio {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long usuarioRolId;
-
-    @ManyToOne(fetch = FetchType.EAGER)
-    private Usuarios usuario;
-
-    @ManyToOne(fetch = FetchType.EAGER)
-    private RolEntity rol;
+    @Column(name = "id_dias")
+    private Long id_dias;
+    @Column(name = "dias")
+    private String dias;
 
 }

@@ -2,6 +2,10 @@ package com.sistema.examenes.entity;
 
 import javax.persistence.*;
 
+/** --------------------------------------------------
+ * --------    ESTE NO SE USA PARA MR JOB -------------
+ * ------------------------------------------------ */
+
 @Entity
 @Table(name = "preguntas")
 public class Pregunta {

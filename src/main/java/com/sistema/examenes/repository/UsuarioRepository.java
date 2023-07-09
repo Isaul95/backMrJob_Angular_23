@@ -1,14 +1,13 @@
 package com.sistema.examenes.repository;
 
-import com.sistema.examenes.entity.UsuarioEntity;
+import com.sistema.examenes.entity.Usuarios;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UsuarioRepository extends JpaRepository<UsuarioEntity, Long> {
+public interface UsuarioRepository extends JpaRepository<Usuarios, Long> {
 
-    public UsuarioEntity findByUsername(String username);
+    /** para iniciar session */
+    public Usuarios findByUsername(String username);
 
+    /** Esta consulta se usa para buscar usuarios repetidos al registrarse un new usuario */
+    public Usuarios findByEmail(String email);
 }
-
-/** MUY BIEN EXPLICADO
- * Documentacion - Curso de Spring Boot (https://www.youtube.com/watch?v=RWT7sZvgbeY)
- */

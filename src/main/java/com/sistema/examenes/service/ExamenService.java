@@ -1,4 +1,4 @@
-package com.sistema.examenes.service;
+/*package com.sistema.examenes.service;
 
 import com.sistema.examenes.entity.Examen;
 
@@ -16,3 +16,4 @@ public interface ExamenService {
 
     void eliminarExamen(Long examenId);
 }
+*/

@@ -3,7 +3,7 @@ package com.sistema.examenes.controllers;
 import com.sistema.examenes.configuraciones.JwtUtils;
 import com.sistema.examenes.entity.JwtRequest;
 import com.sistema.examenes.entity.JwtResponse;
-import com.sistema.examenes.entity.UsuarioEntity;
+import com.sistema.examenes.entity.Usuarios;
 import com.sistema.examenes.excepciones.UsuarioNotFoundException;
 import com.sistema.examenes.service.impl.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -61,8 +61,8 @@ public class AuthenticationController {
      * @return
      */
     @GetMapping("/actual-usuario")
-    public UsuarioEntity obtenerUsuarioActual(Principal principal){
-        return (UsuarioEntity) this.userDetailsService.loadUserByUsername(principal.getName());
+    public Usuarios obtenerUsuarioActual(Principal principal){
+        return (Usuarios) this.userDetailsService.loadUserByUsername(principal.getName());
     }
 
 }

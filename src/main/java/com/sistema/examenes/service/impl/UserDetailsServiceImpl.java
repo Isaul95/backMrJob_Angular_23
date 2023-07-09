@@ -1,6 +1,6 @@
 package com.sistema.examenes.service.impl;
 
-import com.sistema.examenes.entity.UsuarioEntity;
+import com.sistema.examenes.entity.Usuarios;
 import com.sistema.examenes.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -16,7 +16,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        UsuarioEntity usuario = this.usuarioRepository.findByUsername(username);
+        Usuarios usuario = this.usuarioRepository.findByUsername(username);
           if(usuario == null){
               throw new UsernameNotFoundException("Usuario no encontrado");
           }

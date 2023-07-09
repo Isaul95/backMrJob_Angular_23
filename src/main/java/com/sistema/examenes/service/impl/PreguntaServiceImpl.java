@@ -1,4 +1,4 @@
-package com.sistema.examenes.service.impl;
+/*package com.sistema.examenes.service.impl;
 
 import com.sistema.examenes.entity.Examen;
 import com.sistema.examenes.entity.Pregunta;
@@ -49,3 +49,4 @@ public class PreguntaServiceImpl  implements PreguntaService {
 
     }
 }
+*/

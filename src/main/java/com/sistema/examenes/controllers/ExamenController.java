@@ -1,4 +1,4 @@
-package com.sistema.examenes.controllers;
+/*package com.sistema.examenes.controllers;
 
 import com.sistema.examenes.entity.Examen;
 import com.sistema.examenes.service.ExamenService;
@@ -45,3 +45,4 @@ public class ExamenController {
     }
 
 }
+*/

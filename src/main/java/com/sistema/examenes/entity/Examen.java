@@ -6,6 +6,10 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+/** --------------------------------------------------
+ * --------    ESTE NO SE USA PARA MR JOB -------------
+ * ------------------------------------------------ */
+
 @Entity
 @Table(name = "examenes")
 public class Examen {

@@ -1,4 +1,4 @@
-package com.sistema.examenes.service.impl;
+/*package com.sistema.examenes.service.impl;
 
 import com.sistema.examenes.entity.Categoria;
 import com.sistema.examenes.repository.CategoriaRepository;
@@ -45,3 +45,4 @@ public class CategoriaServiceImpl implements CategoriaService {
         categoriaRepository.delete(categoria);
     }
 }
+*/

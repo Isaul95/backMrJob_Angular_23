@@ -1,4 +1,4 @@
-package com.sistema.examenes.service;
+/*package com.sistema.examenes.service;
 
 import com.sistema.examenes.entity.Categoria;
 
@@ -17,3 +17,4 @@ public interface CategoriaService {
     void eliminarCategoria(Long categoriaId);
 
 }
+*/

@@ -1,4 +1,4 @@
-package com.sistema.examenes.service;
+/*package com.sistema.examenes.service;
 
 import com.sistema.examenes.entity.Examen;
 import com.sistema.examenes.entity.Pregunta;
@@ -19,3 +19,4 @@ public interface PreguntaService {
 
     void eliminarPregunta(Long preguntaId);
 }
+*/

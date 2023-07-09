@@ -10,15 +10,20 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "roles")
-public class RolEntity {
+@Table(name = "cat_roles")
+public class CatRol {
 
     @Id
-    private Long rolId;
-    private String nombre;
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_rol")
+    private Long idRol;
+    @Column(name = "nombre_rol")
+    private String nombreRol;
+    @Column(name = "descripcion")
     private String descripcion;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "rol")
     private Set<UsuarioRol> usuarioRoles = new HashSet<>();
 
 }
+
